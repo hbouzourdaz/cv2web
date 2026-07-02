@@ -9,7 +9,7 @@ export function getUrl(username: string) {
   const domain =
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'https://cv2web.com';
+      : 'https://cv2web.vercel.app';
   return `${domain}/${username}`;
 }
 

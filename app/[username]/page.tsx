@@ -45,7 +45,7 @@ export async function generateMetadata({
       description: resume.resumeData.summary,
       images: [
         {
-          url: `https://cv2web.com/${username}/og`,
+          url: `https://cv2web.vercel.app/${username}/og`,
           width: 1200,
           height: 630,
           alt: `${resume.resumeData.header.name}'s Resume | CV2Web`,
@@ -80,7 +80,7 @@ export default async function ProfilePage({
     email:
       resume.resumeData.header.contacts.email &&
       `mailto:${resume.resumeData.header.contacts.email}`,
-    url: `https://cv2web.com/${username}`,
+    url: `https://cv2web.vercel.app/${username}`,
     skills: resume.resumeData.header.skills,
   };
 

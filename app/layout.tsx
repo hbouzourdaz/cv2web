@@ -10,7 +10,7 @@ import PlausibleProvider from 'next-plausible';
 const mono = JetBrains_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cv2web.com'),
+  metadataBase: new URL('https://cv2web.vercel.app'),
   title: 'CV2Web | Hakim BOUZOURDAZ',
   description:
     'Turn your resume into a stunning personal website — powered by AI.',
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <PlausibleProvider domain="cv2web.com">
+      <PlausibleProvider domain="cv2web.vercel.app">
         <ReactQueryClientProvider>
           <html lang="en" suppressHydrationWarning>
             <head>

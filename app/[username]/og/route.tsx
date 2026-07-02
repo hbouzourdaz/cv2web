@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
     const name = (resume?.resumeData?.header?.name || 'User').slice(0, 100);
     const role = (resume?.resumeData?.header?.shortAbout || '').slice(0, 200);
     const location = (resume?.resumeData?.header?.location || '').slice(0, 100);
-    const website = `www.cv2web.com/${username}`.slice(0, 200);
+    const website = `www.cv2web.vercel.app/${username}`.slice(0, 200);
     const profileImageUrl = clerkUser?.imageUrl;
 
     let fontData: ArrayBuffer;
@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
           >
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <img
-                src="https://cv2web.com/logo.svg"
+                src="https://cv2web.vercel.app/logo.svg"
                 alt="CV2Web Logo"
                 style={{ width: '144px', height: '46px' }}
               />
@@ -110,7 +110,7 @@ export async function GET(request: NextRequest) {
                 }}
             >
               <img
-                src={profileImageUrl || 'https://cv2web.com/placeholder.svg'}
+                src={profileImageUrl || 'https://cv2web.vercel.app/placeholder.svg'}
                 alt="Profile"
                 style={{ width: '360px', height: '360px', borderRadius: '16px', objectFit: 'cover' }}
               />
