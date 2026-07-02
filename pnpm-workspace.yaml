@@ -1,0 +1,5 @@
+allowBuilds:
+  '@clerk/shared': true
+  aws-sdk: set this to true or false
+  esbuild: true
+  sharp: set this to true or false
